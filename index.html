@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spend the Billionaire's Money</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>💰 SPEND THE BILLIONAIRE'S MONEY</h1>
+
+        <div class="money" id="money">
+            $100,000,000,000
+        </div>
+
+        <p>
+            Spend your fortune. Make your choices. Live with the consequences.
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <!-- STATS -->
+
+        <section class="stats">
+
+            <div>
+                ❤️ Kindness
+                <strong id="kindness">0</strong>
+            </div>
+
+            <div>
+                😊 Happiness
+                <strong id="happiness">0</strong>
+            </div>
+
+            <div>
+                🌎 Impact
+                <strong id="impact">0</strong>
+            </div>
+
+            <div>
+                🗑️ Waste
+                <strong id="waste">0</strong>
+            </div>
+
+        </section>
+
+
+        <!-- SHOP -->
+
+        <div class="shop">
+
+
+            <!-- PIZZA -->
+
+            <div class="item">
+
+                <div class="emoji">🍕</div>
+
+                <h2>Pizza</h2>
+
+                <p>$20</p>
+
+                <button onclick="buyItem(20, 'Pizza', 'pizza')">
+                    BUY
+                </button>
+
+                <div id="pizza">Owned: 0</div>
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="item">
+
+                <div class="emoji">📱</div>
+
+                <h2>Phone</h2>
+
+                <p>$1,000</p>
+
+                <button onclick="buyItem(1000, 'Phone', 'phone')">
+                    BUY
+                </button>
+
+                <div id="phone">Owned: 0</div>
+
+            </div>
+
+
+            <!-- GAMING PC -->
+
+            <div class="item">
+
+                <div class="emoji">🎮</div>
+
+                <h2>Gaming PC</h2>
+
+                <p>$5,000</p>
+
+                <button onclick="buyItem(5000, 'Gaming PC', 'gamingpc')">
+                    BUY
+                </button>
+
+                <div id="gamingpc">Owned: 0</div>
+
+            </div>
+
+
+            <!-- SUPERCAR -->
+
+            <div class="item">
+
+                <div class="emoji">🚗</div>
+
+                <h2>Supercar</h2>
+
+                <p>$300,000</p>
+
+                <button onclick="buyItem(300000, 'Supercar', 'supercar')">
+                    BUY
+                </button>
+
+                <div id="supercar">Owned: 0</div>
+
+            </div>
+
+
+            <!-- MANSION -->
+
+            <div class="item">
+
+                <div class="emoji">🏠</div>
+
+                <h2>Mansion</h2>
+
+                <p>$10,000,000</p>
+
+                <button onclick="buyItem(10000000, 'Mansion', 'mansion')">
+                    BUY
+                </button>
+
+                <div id="mansion">Owned: 0</div>
+
+            </div>
+
+
+            <!-- PRIVATE JET -->
+
+            <div class="item">
+
+                <div class="emoji">✈️</div>
+
+                <h2>Private Jet</h2>
+
+                <p>$80,000,000</p>
+
+                <button onclick="buyItem(80000000, 'Private Jet', 'jet')">
+                    BUY
+                </button>
+
+                <div id="jet">Owned: 0</div>
+
+            </div>
+
+
+            <!-- ROCKET -->
+
+            <div class="item">
+
+                <div class="emoji">🚀</div>
+
+                <h2>Rocket</h2>
+
+                <p>$100,000,000</p>
+
+                <button onclick="buyItem(100000000, 'Rocket', 'rocket')">
+                    BUY
+                </button>
+
+                <div id="rocket">Owned: 0</div>
+
+            </div>
+
+
+            <!-- HOSPITAL -->
+
+            <div class="item">
+
+                <div class="emoji">🏥</div>
+
+                <h2>Build a Hospital</h2>
+
+                <p>$250,000,000</p>
+
+                <button onclick="buyItem(250000000, 'Hospital', 'hospital')">
+                    BUILD
+                </button>
+
+                <div id="hospital">Owned: 0</div>
+
+            </div>
+
+
+            <!-- YACHT -->
+
+            <div class="item">
+
+                <div class="emoji">🛥️</div>
+
+                <h2>Yacht</h2>
+
+                <p>$500,000,000</p>
+
+                <button onclick="buyItem(500000000, 'Yacht', 'yacht')">
+                    BUY
+                </button>
+
+                <div id="yacht">Owned: 0</div>
+
+            </div>
+
+
+            <!-- ISLAND -->
+
+            <div class="item">
+
+                <div class="emoji">🏝️</div>
+
+                <h2>Private Island</h2>
+
+                <p>$1,000,000,000</p>
+
+                <button onclick="buyItem(1000000000, 'Private Island', 'island')">
+                    BUY
+                </button>
+
+                <div id="island">Owned: 0</div>
+
+            </div>
+
+
+            <!-- SKYSCRAPER -->
+
+            <div class="item">
+
+                <div class="emoji">🏢</div>
+
+                <h2>Skyscraper</h2>
+
+                <p>$2,000,000,000</p>
+
+                <button onclick="buyItem(2000000000, 'Skyscraper', 'skyscraper')">
+                    BUY
+                </button>
+
+                <div id="skyscraper">Owned: 0</div>
+
+            </div>
+
+
+            <!-- SCHOOL -->
+
+            <div class="item">
+
+                <div class="emoji">🏫</div>
+
+                <h2>Build a School</h2>
+
+                <p>$50,000,000</p>
+
+                <button onclick="buyItem(50000000, 'School', 'school')">
+                    BUILD
+                </button>
+
+                <div id="school">Owned: 0</div>
+
+            </div>
+
+
+            <!-- CHARITY -->
+
+            <div class="item">
+
+                <div class="emoji">❤️</div>
+
+                <h2>Charity Donation</h2>
+
+                <p>$10,000,000</p>
+
+                <button onclick="buyItem(10000000, 'Charity', 'charity')">
+                    DONATE
+                </button>
+
+                <div id="charity">Owned: 0</div>
+
+            </div>
+
+
+            <!-- HELICOPTER -->
+
+            <div class="item">
+
+                <div class="emoji">🚁</div>
+
+                <h2>Helicopter</h2>
+
+                <p>$30,000,000</p>
+
+                <button onclick="buyItem(30000000, 'Helicopter', 'helicopter')">
+                    BUY
+                </button>
+
+                <div id="helicopter">Owned: 0</div>
+
+            </div>
+
+
+            <!-- STADIUM -->
+
+            <div class="item">
+
+                <div class="emoji">🏟️</div>
+
+                <h2>Sports Stadium</h2>
+
+                <p>$400,000,000</p>
+
+                <button onclick="buyItem(400000000, 'Sports Stadium', 'stadium')">
+                    BUILD
+                </button>
+
+                <div id="stadium">Owned: 0</div>
+
+            </div>
+
+
+            <!-- MOVIE STUDIO -->
+
+            <div class="item">
+
+                <div class="emoji">🎬</div>
+
+                <h2>Movie Studio</h2>
+
+                <p>$200,000,000</p>
+
+                <button onclick="buyItem(200000000, 'Movie Studio', 'studio')">
+                    BUY
+                </button>
+
+                <div id="studio">Owned: 0</div>
+
+            </div>
+
+
+            <!-- THEME PARK -->
+
+            <div class="item">
+
+                <div class="emoji">🎢</div>
+
+                <h2>Theme Park</h2>
+
+                <p>$750,000,000</p>
+
+                <button onclick="buyItem(750000000, 'Theme Park', 'themepark')">
+                    BUILD
+                </button>
+
+                <div id="themepark">Owned: 0</div>
+
+            </div>
+
+
+            <!-- HOTEL -->
+
+            <div class="item">
+
+                <div class="emoji">🏨</div>
+
+                <h2>Luxury Hotel</h2>
+
+                <p>$300,000,000</p>
+
+                <button onclick="buyItem(300000000, 'Luxury Hotel', 'hotel')">
+                    BUY
+                </button>
+
+                <div id="hotel">Owned: 0</div>
+
+            </div>
+
+
+            <!-- SATELLITE -->
+
+            <div class="item">
+
+                <div class="emoji">🛰️</div>
+
+                <h2>Satellite</h2>
+
+                <p>$150,000,000</p>
+
+                <button onclick="buyItem(150000000, 'Satellite', 'satellite')">
+                    LAUNCH
+                </button>
+
+                <div id="satellite">Owned: 0</div>
+
+            </div>
+
+
+            <!-- FOREST -->
+
+            <div class="item">
+
+                <div class="emoji">🌳</div>
+
+                <h2>Plant a Forest</h2>
+
+                <p>$75,000,000</p>
+
+                <button onclick="buyItem(75000000, 'Forest', 'forest')">
+                    PLANT
+                </button>
+
+                <div id="forest">Owned: 0</div>
+
+            </div>
+
+
+            <!-- ANIMAL RESCUE -->
+
+            <div class="item">
+
+                <div class="emoji">🐶</div>
+
+                <h2>Animal Rescue Center</h2>
+
+                <p>$25,000,000</p>
+
+                <button onclick="buyItem(25000000, 'Animal Rescue Center', 'animalrescue')">
+                    BUILD
+                </button>
+
+                <div id="animalrescue">Owned: 0</div>
+
+            </div>
+
+
+            <!-- UNIVERSITY -->
+
+            <div class="item">
+
+                <div class="emoji">🎓</div>
+
+                <h2>University</h2>
+
+                <p>$600,000,000</p>
+
+                <button onclick="buyItem(600000000, 'University', 'university')">
+                    BUILD
+                </button>
+
+                <div id="university">Owned: 0</div>
+
+            </div>
+
+
+            <!-- WATER -->
+
+            <div class="item">
+
+                <div class="emoji">💧</div>
+
+                <h2>Clean Water Project</h2>
+
+                <p>$100,000,000</p>
+
+                <button onclick="buyItem(100000000, 'Clean Water Project', 'water')">
+                    FUND
+                </button>
+
+                <div id="water">Owned: 0</div>
+
+            </div>
+
+
+            <!-- NEIGHBORHOOD -->
+
+            <div class="item">
+
+                <div class="emoji">🏡</div>
+
+                <h2>Neighborhood</h2>
+
+                <p>$200,000,000</p>
+
+                <button onclick="buyItem(200000000, 'Neighborhood', 'neighborhood')">
+                    BUILD
+                </button>
+
+                <div id="neighborhood">Owned: 0</div>
+
+            </div>
+
+
+            <!-- TECH COMPANY -->
+
+            <div class="item">
+
+                <div class="emoji">💻</div>
+
+                <h2>Tech Company</h2>
+
+                <p>$1,500,000,000</p>
+
+                <button onclick="buyItem(1500000000, 'Tech Company', 'techcompany')">
+                    BUY
+                </button>
+
+                <div id="techcompany">Owned: 0</div>
+
+            </div>
+
+
+            <!-- ART -->
+
+            <div class="item">
+
+                <div class="emoji">🖼️</div>
+
+                <h2>Art Collection</h2>
+
+                <p>$50,000,000</p>
+
+                <button onclick="buyItem(50000000, 'Art Collection', 'art')">
+                    BUY
+                </button>
+
+                <div id="art">Owned: 0</div>
+
+            </div>
+
+
+            <!-- CONCERT -->
+
+            <div class="item">
+
+                <div class="emoji">🎤</div>
+
+                <h2>Concert Festival</h2>
+
+                <p>$100,000,000</p>
+
+                <button onclick="buyItem(100000000, 'Concert Festival', 'concert')">
+                    HOST
+                </button>
+
+                <div id="concert">Owned: 0</div>
+
+            </div>
+
+
+            <!-- MUSEUM -->
+
+            <div class="item">
+
+                <div class="emoji">🏛️</div>
+
+                <h2>Museum</h2>
+
+                <p>$120,000,000</p>
+
+                <button onclick="buyItem(120000000, 'Museum', 'museum')">
+                    BUILD
+                </button>
+
+                <div id="museum">Owned: 0</div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHECKOUT -->
+
+        <section class="checkout">
+
+            <h2>🧾 FINAL CHECK</h2>
+
+            <p>Total Spent</p>
+
+            <div id="spent">$0</div>
+
+            <p>Money Remaining</p>
+
+            <div id="remaining">$100,000,000,000</div>
+
+            <button
+                id="checkoutButton"
+                class="check-button"
+                onclick="finalCheck()">
+
+                🧾 CHECK MY SPENDING
+
+            </button>
+
+            <div id="result"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- CHOICE POPUP -->
+
+    <div id="choiceBox" class="choice-box">
+
+        <div class="choice-content">
+
+            <h2 id="choiceTitle">
+                What will you do?
+            </h2>
+
+            <p id="choiceDescription"></p>
+
+            <div id="choices"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- WATERMARK -->
+
+    <div class="watermark">
+        © 2026 GigaLab • Made by Daniel Gryomin 💻
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
